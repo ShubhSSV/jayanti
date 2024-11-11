@@ -1,0 +1,97 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160vh;
+    padding: 20px;
+    margin-top: 0px;
+}
+
+.container {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.plant-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.plant-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.plant-info {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.plant-info h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.plant-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+strong {
+    color: #333;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    /* For tablets and mobile screens */
+    .plant-details {
+        flex-direction: column;
+    }
+
+    .plant-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .plant-info p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* For small mobile screens */
+    .plant-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .plant-info p {
+        font-size: 12px;
+    }
+}

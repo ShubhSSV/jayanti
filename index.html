@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Plant Information</h1>
+            <div class="plant-image">
+                <img src="https://admin.thegreenyard.in/uploads/product_images/339298057-Money-Plant-Varigated.jpg" alt="Plant Image">
+            </div>
+            <div class="plant-info">
+                <br>
+                <h2>Plant Name: Aloe Vera</h2>
+                <hr>
+                <br>
+                <p><strong>Benefits:</strong> </p>
+                <br>
+                <hr>
+                <br>
+                <p><strong>Season:</strong> </p>
+                <br>
+                <hr>
+                <br>
+                <p><strong>Region:</strong> </p>
+                <br>
+                <hr>
+                <br>
+                <p><strong>Age:</strong> </p>
+                <br>
+                <hr>
+                <br>
+            </div>
+    
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        var url = "https://your-username.github.io/plant-info/";
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: url,
+            width: 128,
+            height: 128
+        });
+    </script>
+</body>
+</html>
